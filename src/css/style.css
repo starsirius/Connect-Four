@@ -1,0 +1,191 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #E0E0E0;
+   font-size: 100%;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+   color: #555;
+   text-decoration:none;
+   border-bottom: 1px solid #777;
+}
+
+a:hover {
+   background-color:#555;
+   color: #E0E0E0;
+}
+
+#header {
+   margin: 0 0 0 10px;
+   font-family: Baskerville, Verdana, "Times New Roman", sans-serif;
+}
+
+#header h1 sup { font-size: 0.4em; }
+#header h1 sup a { text-decoration: none; }
+
+#header h3 {
+   font-size: 0.8em;
+}
+#header h3 strong {
+   font-family: Baskerville, Palatino, Georgia, "Times New Roman", sans-serif;
+   font-style: italic;
+   color: #808080;
+}
+
+#header #replay {
+   float: right;
+   margin: -43px 10px 0 0;
+   padding: 2px 5px 2px 5px;
+   font-family: Palatino, Georgia, "Times New Roman", sans-serif;
+   font-style: bold;
+   font-size: 0.9em;
+   color: #808080;
+   border: 1px solid #C0C0C0;
+}
+#header #replay:hover {
+   cursor: pointer;
+   background-color: #555;
+   color: #E0E0E0;
+}
+
+#main {
+   position: relative;
+   margin: 30px auto 30px -425px;
+   background: #FFF;
+   padding: 15px;
+   border: 1px solid #C0C0C0;
+   left: 50%;
+   width: 850px;
+   height: 650px;
+}
+
+#arrow {
+   position: absolute;
+   margin: 0px 0 0 0;
+   font-family: Palatino, Georgia, "Times New Roman", sans-serif;
+   font-style: italic;
+   text-indent: 110px;
+   background: url('../images/arrow.png') no-repeat left bottom;
+   left: 50%;
+   width: 300px;
+   height: 65px;
+}
+
+#board-container{
+   position: absolute;
+   margin: 30px 0 0 -200px;
+   left: 50%;
+   width: 850px;
+   height: 500px;
+}
+
+#board {
+   position: absolute;
+   margin: 100px 0 0 0;
+   background: url('../images/connect_four_bg.png') no-repeat center top;
+   width: 400px;
+   height: 500px;
+   z-index: 3;
+}
+
+#board-inside {
+   position: absolute;
+   margin: 100px 0 0 0;
+   width: 400px;
+   height: 500px;
+   z-index: 2;
+}
+
+#drop-area {
+   position: absolute;
+   margin: 50px 0 0 0;
+   width: 400px;
+   height: 50px;
+}
+
+#player0 {
+   position: absolute;
+   margin: 380px 0 0 85px;
+   width: 150px;
+   height: 200px;
+}
+.player0-normal { background: url('../images/player0_normal.png') no-repeat center top; }
+.player0-myturn { background: url('../images/player0_myturn.png') no-repeat center top; }
+.player0-win { background: url('../images/player0_win.png') no-repeat center top; }
+.player0-lose { background: url('../images/player0_lose.png') no-repeat center top; }
+
+#player1 {
+   position: absolute;
+   margin: 380px 0 0 610px;
+   width: 150px;
+   height: 200px;
+}
+.player1-normal { background: url('../images/player1_normal.png') no-repeat center top; }
+.player1-myturn { background: url('../images/player1_myturn.png') no-repeat center top; }
+.player1-win { background: url('../images/player1_win.png') no-repeat center top; }
+.player1-lose { background: url('../images/player1_lose.png') no-repeat center top; }
+
+#speech0 {
+   position: absolute;
+   font-family: Palatino, Georgia, "Times New Roman", sans-serif;
+   font-style: italic;
+   margin: 300px 0 0 50px;
+   width: 150px;
+   height: 85px;
+   text-indent: 40px;
+}
+.speech0-normal {} 
+.speech0-myturn { background: url('../images/speech0.png') no-repeat center bottom; }
+.speech0-win { background: url('../images/speech0.png') no-repeat center bottom; }
+.speech0-lose {} 
+
+#speech1 {
+   position: absolute;
+   font-family: Palatino, Georgia, "Times New Roman", sans-serif;
+   font-style: italic;
+   margin: 300px 0 0 650px;
+   width: 150px;
+   height: 85px;
+   text-indent: 40px;
+}
+.speech1-normal {} 
+.speech1-myturn { background: url('../images/speech1.png') no-repeat center bottom; }
+.speech1-win { background: url('../images/speech1.png') no-repeat center bottom; }
+.speech1-lose {} 
+
+#footer {
+   position: absolute;
+   top: 101%;
+   color: #555;
+   font-size: 0.75em;
+}
+
+.slot {
+   float: left;
+   background: url('../images/prompt_inactive.png') no-repeat center top;
+   width: 40px;
+   height: 40px;
+}
+
+.slot:hover {
+   float: left;
+   background: url('../images/prompt.png') no-repeat center top;
+   width: 40px;
+   height: 40px;
+}
+
+.disc0, .disc1 {
+   position: absolute;
+   width: 45px;
+   height: 45px;
+   z-index: 1;
+}
+
+.disc0 {background: url('../images/disc_red.png') no-repeat right top;}
+.disc1 {background: url('../images/disc_yellow.png') no-repeat right top;}
+

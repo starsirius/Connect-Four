@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <title>Connect Four Game</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+   <script type="text/javascript" src="js/connect-four.js"></script>
+
+<script type="text/javascript">
+   $(document).ready(function() {
+         gameInit();
+   });
+</script>
+      
+</head>
+      
+<body>
+   <div id="main">
+      <div id="header">
+         <h1>Connect Four<sup> <a href="http://en.wikipedia.org/wiki/Connect_Four" target="_blank">[?]</a></sup></h1>
+         <h3>This game is made of some <strong>{HTML, CSS, JavaScript}</strong>.</h3>
+         <div id="replay">Replay</div>
+      </div> <!-- end of header -->
+
+      <div id="arrow">Drop disc from the top.</div>
+
+      <div id="board-container">
+         <div id="drop-area"></div>
+         <div id="board"></div>
+         <div id="board-inside"></div>
+      </div> <!-- end of board-container -->
+
+      <div id="player0"></div>
+      <div id="speech0"></div>
+      <div id="player1"></div>
+      <div id="speech1"></div>
+
+      <div id="footer">
+         This website is designed by 
+         <a href="http://star.csie.org/~starsirius">Chung-Yi Chi</a>. 
+         Copyright &copy; 2011. All rights reserved.
+      </div> <!-- end of footer -->
+   </div> <!-- end of main -->
+</body>
+      
+</html>
